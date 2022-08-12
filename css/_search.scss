@@ -1,0 +1,123 @@
+.search {
+  background-color: $color-primary-light-1;
+  border: none;
+  border-radius: 1.2rem;
+  padding: 1rem;
+  // margin-top: 19rem;
+  width: 80%;
+
+  // display: flex;
+  // justify-content: space-between;
+  // align-items: center;
+
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+
+  @media only screen and (max-width: $bp-small) {
+    width: 95%;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    padding: 1 rem;
+  }
+
+  & > * {
+    display: flex;
+    align-items: center;
+
+    svg {
+      fill: #ffa800;
+      width: 2.4rem;
+      height: 2.4rem;
+      margin: 2rem 1.6rem 2rem 1.6rem;
+
+      @media only screen and (max-width: $bp-large) {
+        margin: 1rem 0.8rem 1rem 0.8rem;
+      }
+    }
+
+    p {
+      font-weight: 300;
+      font-size: 1.4rem;
+
+      @media only screen and (max-width: $bp-large) {
+        font-size: 1rem;
+      }
+    }
+
+    h3 {
+      font-weight: 500;
+      font-size: 1.6rem;
+
+      @media only screen and (max-width: $bp-large) {
+        font-weight: 500;
+        font-size: 1.3rem;
+      }
+
+      @media only screen and (max-width: $bp-smallest) {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  button {
+    border: none;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 1.2rem;
+    background-color: #7b61ff;
+
+    grid-column: 16 / -1;
+
+    svg {
+      fill: $color-primary-light-1;
+      margin: 2rem 1.6rem 2rem 1.6rem;
+
+      @media only screen and (max-width: $bp-smallest) {
+        margin: 1rem 0.8rem 1rem 0.8rem;
+      }
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      position: relative;
+      top: -50%;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      width: 4rem;
+      height: 4rem;
+    }
+  }
+
+  &__location {
+    grid-column: 1 / 6;
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-column: 1 / 9;
+    }
+  }
+
+  &__activity {
+    grid-column: 6 / 9;
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-column: 9 / 14;
+    }
+  }
+
+  &__when {
+    grid-column: 9 / 12;
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-column: 1 / 9;
+    }
+  }
+
+  &__guests {
+    grid-column: 12 / 15;
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-column: 9 / 14;
+    }
+  }
+}

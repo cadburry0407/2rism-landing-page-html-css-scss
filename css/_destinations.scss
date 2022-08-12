@@ -1,0 +1,12 @@
+.destinations {
+  h1 {
+    grid-column: 1 / -1;
+    grid-row: 1/ 2;
+  }
+
+  .popular-items {
+    h3 {
+      margin-top: 1rem;
+    }
+  }
+}

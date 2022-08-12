@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/main.js" defer></script>
+
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <title>2rism</title>
+  </head>
+  <body>
+    <nav class="nav" id="header">
+      <div class="container">
+        <a href="#" class="logo-link"
+          ><img src="images/logo.png" alt="2rism logo" class="nav__logo"
+        /></a>
+
+        <ul class="nav__links">
+          <li>
+            <a href="#" class="nav__links-item active">Home</a>
+          </li>
+          <li><a href="#hotels" class="nav__links-item">Hotels</a></li>
+          <li>
+            <a href="#hotels" class="nav__links-item">Restaurants</a>
+          </li>
+          <li>
+            <a href="#tours" class="nav__links-item">Tours</a>
+          </li>
+          <li>
+            <a href="#destinations" class="nav__links-item">Destinations</a>
+          </li>
+          <li>
+            <a href="#activities" class="nav__links-item">Activites</a>
+          </li>
+          <li>
+            <a href="#aboutus" class="nav__links-item">Contact</a>
+          </li>
+        </ul>
+
+        <div class="nav__user">
+          <div class="nav__user-profile">
+            <p class="nav__user-profile-greeting">Halo</p>
+            <p class="nav__user-profile-name">Ales Nesetril</p>
+          </div>
+          <img
+            src="images/user-photo.png"
+            alt="user photo"
+            class="nav__user-picture"
+          />
+        </div>
+
+        <button class="nav__btn-toggle-menu" id="menu-toggle-icon">
+          <i class="ri-menu-3-line open-menu-icon"></i>
+          <i class="ri-close-line close-menu-icon"></i>
+        </button>
+
+        <div class="menu" id="menu">
+          <ul class="menu__list">
+            <li class="menu__list-item"><a href="#">Home</a></li>
+            <li class="menu__list-item"><a href="#hotels">Hotels</a></li>
+            <li class="menu__list-item"><a href="#hotels">Restaurant Us</a></li>
+            <li class="menu__list-item"><a href="#tours">Tours</a></li>
+            <li class="menu__list-item">
+              <a href="#destinations">Destinations</a>
+            </li>
+            <li class="menu__list-item"><a href="#activites">Activites</a></li>
+            <li class="menu__list-item"><a href="#aboutus">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="main">
+      <div class="container">
+        <div class="header-content">
+          <div class="slogan">
+            <h1>Discover the most engaging places</h1>
+            <button class="btn-slogan">
+              <svg>
+                <use xlink:href="images/sprite.svg#icon-global-line"></use>
+              </svg>
+              Discover on 3D Globe
+            </button>
+          </div>
+
+          <div class="search-container">
+            <div class="search">
+              <div class="search__location">
+                <svg>
+                  <use xlink:href="images/sprite.svg#icon-map-pin-line"></use>
+                </svg>
+                <div class="search__location-text">
+                  <p>Location</p>
+                  <h3>Explore nearby destinations</h3>
+                </div>
+              </div>
+              <div class="search__activity">
+                <svg>
+                  <use xlink:href="images/sprite.svg#icon-riding-line"></use>
+                </svg>
+                <div class="search__activity-text">
+                  <p>Activity</p>
+                  <h3>All Activities</h3>
+                </div>
+              </div>
+              <div class="search__when">
+                <svg>
+                  <use
+                    xlink:href="images/sprite.svg#icon-calendar-event-fill"
+                  ></use>
+                </svg>
+                <div class="search__when-text">
+                  <p>When</p>
+                  <h3>Choose a Date</h3>
+                </div>
+              </div>
+              <div class="search__guests">
+                <svg>
+                  <use
+                    xlink:href="images/sprite.svg#icon-calendar-event-fill"
+                  ></use>
+                </svg>
+                <div class="search__guests-text">
+                  <p>Guests</p>
+                  <h3>1 guest</h3>
+                </div>
+              </div>
+              <button class="btn-search">
+                <svg>
+                  <use xlink:href="images/sprite.svg#icon-search-line"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="destinations-container" id="destinations">
+      <div class="container">
+        <div class="destinations">
+          <h1 class="heading-1">Popular Destinations</h1>
+
+          <div class="popular-items">
+            <figure>
+              <img src="images/popular-1.png" alt="Big Sur" class="img-item" />
+            </figure>
+
+            <h3 class="heading-3">Big Sur</h3>
+            <p class="text-light">California, USA</p>
+          </div>
+          <div class="popular-items">
+            <figure>
+              <img src="images/popular-2.png" alt="Prescott" class="img-item" />
+            </figure>
+
+            <h3 class="heading-3">Prescott</h3>
+            <p class="text-light">Arizona, USA</p>
+          </div>
+          <div class="popular-items">
+            <figure>
+              <img
+                src="images/popular-3.png"
+                alt="Fort Mayers"
+                class="img-item"
+              />
+            </figure>
+
+            <h3 class="heading-3">Fort Mayers</h3>
+            <p class="text-light">Florida, USA</p>
+          </div>
+          <div class="popular-items">
+            <figure>
+              <img src="images/popular-4.png" alt="Tucson" class="img-item" />
+            </figure>
+
+            <h3 class="heading-3">Tucson</h3>
+            <p class="text-light">Arizona, USA</p>
+          </div>
+          <div class="popular-items">
+            <figure>
+              <img
+                src="images/popular-5.png"
+                alt="St. Joseph"
+                class="img-item"
+              />
+            </figure>
+
+            <h3 class="heading-3">St. Joseph</h3>
+            <p class="text-light">Michigan, USA</p>
+          </div>
+          <div class="popular-items">
+            <figure>
+              <img src="images/popular-6.png" alt="Madrid" class="img-item" />
+            </figure>
+
+            <h3 class="heading-3">Madrid</h3>
+            <p class="text-light">Spain</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hotel-restaurant-container" id="hotels">
+      <div class="container">
+        <div class="hotel-restaurant">
+          <div class="hotel-restaurant__heading heading-main">
+            <h1 class="heading-1">Hotels and Restaurants</h1>
+            <button class="btn-more">
+              View all
+
+              <svg class="text-light-svg">
+                <use xlink:href="images/sprite.svg#icon-arrow-right-line"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="hotel-restaurant-item">
+            <figure>
+              <img
+                src="images/hotel-restaurant-1.png"
+                alt="Monastero Santa Rosa Hotel & Spa"
+                class="img-item"
+              />
+            </figure>
+
+            <h3 class="heading-3">Monastero Santa Rosa Hotel & Spa</h3>
+            <div class="ratings">
+              <p class="text-light">
+                <svg class="text-light-svg">
+                  <use xlink:href="images/sprite.svg#icon-map-pin-line"></use>
+                </svg>
+                Salerno, Italy
+              </p>
+              <div class="stars">
+                <svg class="star-fill-svg">
+                  <use xlink:href="images/sprite.svg#icon-star-fill"></use>
+                </svg>
+                <svg class="star-fill-svg">
+                  <use xlink:href="images/sprite.svg#icon-star-fill"></use>
+                </svg>
+                <svg class="star-fill-svg">
+                  <use xlink:href="images/sprite.svg#icon-star-fill"></use>
+                </svg>
+                <svg class="star-fill-svg">
+                  <use xlink:href="images/sprite.svg#icon-star-fill"></use>
+                </svg>
+                <svg class="star-fill-svg">
+                  <use xlink:href="images/sprite.svg#icon-star-fill"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="hotel-restaurant-item">
+            <figure>
+              <img
+                src="images/hotel-restaurant-2.png"
+                alt="Grand Hotel Tremezzo"
+                class="img-item"
+              />
+            </figure>
+
+            <h3 class="heading-3">Grand Hotel Tremezzo</h3>
+            <div class="ratings">
+              <p class="text-light">
+                <svg class="text-light-svg">
+                  <use xlink:href="images/sprite.svg#icon-map-pin-line"></use>
+                </svg>
+                Lake Como, Italy
+              </p>
+              <div class="stars">
+                <svg class="star-fill-svg">
+                  <use xlink:href="images/sprite.svg#icon-star-fill"></use>
+                </svg>
+                <svg class="star-fill-svg">
+                  <use xlink:href="images/sprite.svg#icon-star-fill"></use>
+                </svg>
+                <svg class="star-fill-svg">
+                  <use xlink:href="images/sprite.svg#icon-star-fill"></use>
+                </svg>
+                <svg class="star-fill-svg">
+                  <use xlink:href="images/sprite.svg#icon-star-line"></use>
+                </svg>
+                <svg class="star-fill-svg">
+                  <use xlink:href="images/sprite.svg#icon-star-line"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="hotel-restaurant-item">
+            <figure>
+              <img
+                src="images/hotel-restaurant-3.png"
+                alt="The Oberoi Udaivilas, Udaipur"
+                class="img-item"
+              />
+            </figure>
+
+            <h3 class="heading-3">The Oberoi Udaivilas, Udaipur</h3>
+            <div class="ratings">
+              <p class="text-light">
+                <svg class="text-light-svg">
+                  <use xlink:href="images/sprite.svg#icon-map-pin-line"></use>
+                </svg>
+                Udaipur, India
+              </p>
+              <div class="stars">
+                <svg class="star-fill-svg">
+                  <use xlink:href="images/sprite.svg#icon-star-fill"></use>
+                </svg>
+                <svg class="star-fill-svg">
+                  <use xlink:href="images/sprite.svg#icon-star-fill"></use>
+                </svg>
+                <svg class="star-fill-svg">
+                  <use xlink:href="images/sprite.svg#icon-star-fill"></use>
+                </svg>
+                <svg class="star-fill-svg">
+                  <use xlink:href="images/sprite.svg#icon-star-fill"></use>
+                </svg>
+                <svg class="star-fill-svg">
+                  <use xlink:href="images/sprite.svg#icon-star-line"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="hotel-restaurant-item">
+            <figure>
+              <img
+                src="images/hotel-restaurant-4.png"
+                alt="AKA Beverly Hills"
+                class="img-item"
+              />
+            </figure>
+
+            <h3 class="heading-3">AKA Beverly Hills</h3>
+
+            <div class="ratings">
+              <p class="text-light">
+                <svg class="text-light-svg">
+                  <use xlink:href="images/sprite.svg#icon-map-pin-line"></use>
+                </svg>
+                Los Angeles, United States
+              </p>
+              <div class="stars">
+                <svg class="star-fill-svg">
+                  <use xlink:href="images/sprite.svg#icon-star-fill"></use>
+                </svg>
+                <svg class="star-fill-svg">
+                  <use xlink:href="images/sprite.svg#icon-star-fill"></use>
+                </svg>
+                <svg class="star-fill-svg">
+                  <use xlink:href="images/sprite.svg#icon-star-fill"></use>
+                </svg>
+                <svg class="star-fill-svg">
+                  <use xlink:href="images/sprite.svg#icon-star-line"></use>
+                </svg>
+                <svg class="star-fill-svg">
+                  <use xlink:href="images/sprite.svg#icon-star-line"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tips-advice-container" id="tours">
+      <div class="container">
+        <div class="tips-advice">
+          <div class="tips-advice__heading heading-main">
+            <h1 class="heading-1">Travel Tips and Advice</h1>
+            <button class="btn-more">
+              View all
+
+              <svg class="text-light-svg">
+                <use xlink:href="images/sprite.svg#icon-arrow-right-line"></use>
+              </svg>
+            </button>
+          </div>
+
+          <div class="tips-advice-item">
+            <img
+              src="images/tips-advice-1.png"
+              alt="East Village Ice Cream Crawl"
+              class="img-item"
+            />
+          </div>
+          <div class="tips-advice__description">
+            <h3 class="heading-3">East Village Ice Cream Crawl</h3>
+            <p class="text-light-2">
+              We will stop at five different world-class ice cream shops on this
+              1.5 mile 1.5 hour tour. At each ice cream store we'll explore the
+              story behind the business and see what makes the ice cream unique
+              as you savor every…
+            </p>
+            <div class="tips-advice__description-details">
+              <div>
+                <svg class="text-light-2-svg">
+                  <use
+                    xlink:href="images/sprite.svg#icon-calendar-2-line"
+                  ></use>
+                </svg>
+                <p>Today</p>
+              </div>
+              <div>
+                <svg class="text-light-2-svg">
+                  <use xlink:href="images/sprite.svg#icon-user-line"></use>
+                </svg>
+                <p>Maria Philips</p>
+              </div>
+              <div>
+                <svg class="text-light-2-svg">
+                  <use xlink:href="images/sprite.svg#icon-chat-3-line"></use>
+                </svg>
+                <p>3</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tips-advice-item">
+            <img
+              src="images/tips-advice-2.png"
+              alt="Brooklyn Bridge cinematic photo walk"
+              class="img-item"
+            />
+          </div>
+          <div class="tips-advice__description">
+            <h3 class="heading-3">Brooklyn Bridge cinematic photo walk</h3>
+            <p class="text-light-2">
+              This experience takes place at the Brooklyn Bridge Park and
+              Brooklyn Bridge, but I’m always open to capture clients at
+              different locations upon request for an additional charge.
+            </p>
+            <div class="tips-advice__description-details">
+              <div>
+                <svg class="text-light-2-svg">
+                  <use
+                    xlink:href="images/sprite.svg#icon-calendar-2-line"
+                  ></use>
+                </svg>
+                <p>Today</p>
+              </div>
+              <div>
+                <svg class="text-light-2-svg">
+                  <use xlink:href="images/sprite.svg#icon-user-line"></use>
+                </svg>
+                <p>James Calzoni</p>
+              </div>
+              <div>
+                <svg class="text-light-2-svg">
+                  <use xlink:href="images/sprite.svg#icon-chat-3-line"></use>
+                </svg>
+                <p>17</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="activities-container" id="activities">
+      <div class="container">
+        <div class="activities">
+          <div class="activities__heading heading-main">
+            <h1 class="heading-1">Activities</h1>
+            <button class="btn-more">
+              View all
+
+              <svg class="text-light-svg">
+                <use xlink:href="images/sprite.svg#icon-arrow-right-line"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="activities-item">
+            <div class="activities-item-one">
+              <img
+                src="images/activities-1.png"
+                alt="Sailing"
+                class="img-item"
+              />
+              <h5 class="heading-5">Sailing</h5>
+            </div>
+          </div>
+          <div class="activities-item">
+            <div class="activities-item-one">
+              <img
+                src="images/activities-2.png"
+                alt="Sailing"
+                class="img-item"
+              />
+              <h5 class="heading-5">Climbing</h5>
+            </div>
+          </div>
+          <div class="activities-item">
+            <div class="activities-item-one">
+              <img
+                src="images/activities-3.png"
+                alt="Sailing"
+                class="img-item"
+              />
+              <h5 class="heading-5">Skiing</h5>
+            </div>
+          </div>
+          <div class="activities-item">
+            <div class="activities-item-one">
+              <img
+                src="images/activities-4.png"
+                alt="Sailing"
+                class="img-item"
+              />
+              <h5 class="heading-5">Hiking</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-container" id="aboutus">
+      <div class="container">
+        <div class="about">
+          <div class="about-item">
+            <h1 class="heading-1">About Us</h1>
+            <p class="text-light-2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse a sapien justo. Nulla facilisis tristique imperdiet.
+              Nullam a placerat odio. Sed in ex augue. Aliquam porta consectetur
+              lorem sit amet ultrices. Class aptent taciti sociosqu ad litora
+              torquent per conubia nostra, per inceptos himenaeos.
+            </p>
+            <button class="btn-more">
+              Read more
+
+              <svg class="text-light-svg">
+                <use xlink:href="images/sprite.svg#icon-arrow-right-line"></use>
+              </svg>
+            </button>
+          </div>
+          <figure>
+            <img src="images/about.png" alt="About Us" class="img-item" />
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-container">
+      <div class="container">
+        <div class="footer">
+          <div class="footer-one">
+            <img
+              src="images/footer-logo.png"
+              alt="2rism logo"
+              class="footer-logo"
+            />
+            <p>
+              We always make our customers happy by providing as many choises as
+              possible
+            </p>
+            <svg>
+              <use
+                xlink:href="images/sprite.svg#icon-facebook-circle-fill"
+              ></use>
+            </svg>
+            <svg>
+              <use xlink:href="images/sprite.svg#icon-twitter-fill"></use>
+            </svg>
+            <svg>
+              <use xlink:href="images/sprite.svg#icon-instagram-fill"></use>
+            </svg>
+          </div>
+          <div class="footer-two">
+            <h4 class="heading-4">About</h4>
+            <ul class="footer-links">
+              <li><a class="footer-link-item" href="#">About Us</a></li>
+              <li><a class="footer-link-item" href="#">Features</a></li>
+              <li><a class="footer-link-item" href="#">News</a></li>
+              <li><a class="footer-link-item" href="#">Menu</a></li>
+            </ul>
+          </div>
+          <div class="footer-three">
+            <h4 class="heading-4">Company</h4>
+            <ul class="footer-links">
+              <li><a class="footer-link-item" href="#">Why 2rism</a></li>
+              <li><a class="footer-link-item" href="#">Partner With Us</a></li>
+              <li><a class="footer-link-item" href="#">FAQ</a></li>
+              <li><a class="footer-link-item" href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div class="footer-four">
+            <h4 class="heading-4">Company</h4>
+            <ul class="footer-links">
+              <li><a class="footer-link-item" href="#">Account</a></li>
+              <li><a class="footer-link-item" href="#">Support Center</a></li>
+              <li><a class="footer-link-item" href="#">Feedback</a></li>
+              <li><a class="footer-link-item" href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-five">
+            <h4 class="heading-4">
+              Subscribe on our destination review newsletters
+            </h4>
+            <div class="subscribe-input">
+              <div class="email">
+                <svg class="mail-icon">
+                  <use xlink:href="images/sprite.svg#icon-mail-line"></use>
+                </svg>
+                <!-- <span>Your Email</span> -->
+                <input type="text" placeholder="Email Address" />
+              </div>
+
+              <button class="btn-subscribe">
+                <svg class="mail-icon">
+                  <use
+                    xlink:href="images/sprite.svg#icon-arrow-right-fill"
+                  ></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

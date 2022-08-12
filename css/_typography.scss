@@ -1,0 +1,88 @@
+.heading-1 {
+  font-weight: 600;
+  font-size: 3.2rem;
+}
+
+.heading-2 {
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.heading-3 {
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+.heading-4 {
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+
+.heading-5 {
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+.text-light {
+  font-weight: 400;
+  font-size: 1.3rem;
+  color: $color-primary-dark-4;
+
+  &-svg {
+    width: 1.6rem;
+    height: 1.6rem;
+    fill: $color-primary-dark-4;
+  }
+}
+
+.text-light-2 {
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: $color-primary-dark-3;
+
+  &-svg {
+    width: 1.6rem;
+    height: 1.6rem;
+    fill: $color-primary-dark-3;
+  }
+}
+
+.star-fill-svg {
+  width: 1.6rem;
+  height: 1.6rem;
+  fill: #ffa800;
+}
+
+.btn-more {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #5243c2;
+  border: none;
+  border-radius: 1.2rem;
+  background-color: #f6f4ff;
+  padding: 1rem 1.5rem;
+
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  svg {
+    margin-left: 0.5rem;
+    width: 2rem;
+    height: 2rem;
+    fill: currentColor;
+  }
+}
+
+.img-item {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 1.2rem;
+}

@@ -1,0 +1,215 @@
+.footer {
+  padding: 12rem 0;
+
+  &-one {
+    grid-column: 1 / span 2;
+
+    svg {
+      width: 3.2rem;
+      height: 3.2rem;
+      fill: #5243c2;
+      margin: 2rem 2rem 0 0;
+    }
+
+    p {
+      color: $color-primary-dark-2;
+      font-size: 1.3rem;
+      font-weight: 400;
+      margin-top: 1rem;
+    }
+
+    @media only screen and (max-width: $bp-large) {
+      grid-column: 1 / 4;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      grid-column: 1 / 2;
+    }
+  }
+
+  &-two {
+    @media only screen and (max-width: $bp-large) {
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      grid-row: 3 / 4;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      grid-column: 1 / 2;
+      grid-row: 3 / 4;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      margin-top: 2rem;
+    }
+  }
+
+  &-three {
+    @media only screen and (max-width: $bp-large) {
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      grid-row: 3 / 4;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      grid-column: 1 / 2;
+      grid-row: 4 / 5;
+    }
+  }
+
+  &-four {
+    @media only screen and (max-width: $bp-large) {
+      grid-column: 3 / 4;
+      grid-row: 2 / 3;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      grid-row: 3 / 4;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      grid-column: 1 / 2;
+      grid-row: 5 / 6;
+    }
+  }
+
+  &-five {
+    grid-column: 6 / -1;
+
+    svg {
+      fill: #ffa800;
+      width: 2.4rem;
+      height: 2.4rem;
+    }
+
+    @media only screen and (max-width: $bp-large) {
+      grid-column: 4 / -1;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      grid-column: 1 / span 3;
+      grid-row: 2 / 3;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      margin-top: 2rem;
+      grid-column: 1 / 2;
+    }
+  }
+
+  &-logo {
+    width: 8.8rem;
+    height: 3.6rem;
+  }
+
+  &-links {
+    list-style: none;
+    margin-top: 2rem;
+  }
+
+  &-link-item {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: $color-primary-dark-2;
+    margin-bottom: 1rem;
+    display: block;
+  }
+
+  .subscribe-input {
+    margin-top: 1rem;
+    position: relative;
+    display: flex;
+
+    @media only screen and (max-width: $bp-smallest) {
+      flex-direction: column;
+    }
+  }
+
+  .subscribe-input > .email .mail-icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: silver;
+
+    @media only screen and (max-width: $bp-smallest) {
+      top: 22.5%;
+    }
+  }
+
+  .subscribe-input input[type='text'] {
+    width: 100%;
+    padding: 2rem 2rem 2rem 4rem;
+    border: none;
+    border-radius: 1.2rem;
+    color: #161444;
+    font-weight: 500;
+    font-size: 1.8rem;
+    transition: all 0.2s;
+  }
+  .subscribe-input input::placeholder {
+    position: relative;
+    color: $color-primary-dark-4;
+    font-weight: 500;
+    font-size: 1.6rem;
+  }
+
+  .subscribe-input input::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+    color: $color-primary-dark-4;
+    font-weight: 500;
+    font-size: 1.6rem;
+  }
+  .subscribe-input input::-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: $color-primary-dark-4;
+    font-weight: 500;
+    font-size: 1.6rem;
+    opacity: 1;
+  }
+  .subscribe-input input::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: $color-primary-dark-4;
+    font-weight: 500;
+    font-size: 1.6rem;
+    opacity: 1;
+  }
+  .subscribe-input input::-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: $color-primary-dark-4;
+    font-weight: 500;
+    font-size: 1.6rem;
+  }
+  .subscribe-input input::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: $color-primary-dark-4;
+    font-weight: 500;
+    font-size: 1.6rem;
+  }
+
+  .btn-subscribe {
+    border: none;
+    min-width: 6rem;
+    min-height: 6rem;
+    border-radius: 1.2rem;
+    background-color: #7b61ff;
+    margin-left: 1rem;
+    cursor: pointer;
+
+    svg {
+      fill: #fff;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      margin-left: 0;
+      margin-top: 1rem;
+    }
+  }
+}

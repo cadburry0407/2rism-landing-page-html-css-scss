@@ -1,0 +1,158 @@
+.nav {
+  // display: flex;
+  // justify-content: space-between;
+  // align-items: center;
+  padding: 1.5rem 0 1.5rem 0;
+  z-index: 9999;
+
+  position: fixed;
+  width: 100%;
+  background-color: black;
+
+  .logo-link {
+    display: block;
+  }
+
+  &.activated {
+    background-color: black;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    justify-content: flex-start;
+    padding: 1.5rem 1rem 1.5rem 1rem;
+  }
+
+  &__logo {
+    width: 8.8rem;
+    height: 3.6rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      margin-right: auto;
+    }
+  }
+
+  &__links {
+    display: flex;
+
+    margin: 0 2.3rem 0 2.3rem;
+
+    list-style: none;
+    font-size: 1.4rem;
+
+    @media only screen and (max-width: $bp-largest) {
+      margin: 0rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      display: none;
+    }
+
+    &-item {
+      color: $color-primary-dark-3;
+      text-decoration: none;
+      display: block;
+    }
+
+    &-item.active {
+      color: $color-primary-light-1;
+    }
+  }
+
+  &__links li:not(:last-child) {
+    margin-right: 5.4rem;
+
+    @media only screen and (max-width: $bp-largest) {
+      margin-right: 2rem;
+    }
+  }
+
+  &__user {
+    display: flex;
+
+    &-picture {
+      width: 4.8rem;
+      height: 4.8rem;
+
+      @media only screen and (max-width: $bp-extra-small) {
+        display: none;
+      }
+    }
+
+    &-profile {
+      margin-right: 1rem;
+      &-greeting {
+        font-size: 1.4rem;
+        font-weight: 300;
+        color: $color-primary-dark-3;
+      }
+
+      &-name {
+        color: $color-primary-light-1;
+        font-size: 1.4rem;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .menu {
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    top: 7rem;
+    right: 0rem;
+    z-index: 9999;
+    background-color: rgb(29, 29, 29);
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity 0.25s ease-in;
+
+    &__list {
+      list-style: none;
+      font-size: 2.5rem;
+      text-align: center;
+
+      &-item a {
+        padding: 0.5rem 0;
+        text-decoration: none;
+        color: azure;
+        display: block;
+      }
+
+      &-item a:hover {
+        color: #ffa800;
+        transition: 0.2s all;
+      }
+    }
+
+    &.activated {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  .nav__btn-toggle-menu {
+    color: #ffa800;
+    border: none;
+    background-color: transparent;
+    font-size: 3.5rem;
+    cursor: pointer;
+    margin-left: 2rem;
+    display: none;
+
+    @media only screen and (max-width: $bp-medium) {
+      display: block;
+    }
+
+    &.activated .open-menu-icon {
+      display: none;
+    }
+
+    &.activated .close-menu-icon {
+      display: block;
+    }
+
+    & .close-menu-icon {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.hotel-restaurant {
+  .hotel-restaurant-item {
+    h3 {
+      margin-top: 1rem;
+    }
+
+    .ratings {
+      display: flex;
+      justify-content: space-between;
+
+      @media only screen and (max-width: $bp-largest) {
+        flex-direction: column;
+
+        .stars {
+          margin-top: 0.5rem;
+        }
+      }
+    }
+  }
+}

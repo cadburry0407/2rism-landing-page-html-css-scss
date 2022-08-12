@@ -1,0 +1,40 @@
+.tips-advice {
+  .tips-advice__description {
+    display: flex;
+    flex-direction: column;
+
+    .text-light-2 {
+      margin-top: 1rem;
+      margin-bottom: auto;
+    }
+
+    &-details {
+      display: flex;
+      //   justify-content: space-between;
+
+      & > * {
+        display: flex;
+        align-items: center;
+        margin-right: 2rem;
+      }
+
+      p {
+        cursor: pointer;
+        margin-left: 0.5rem;
+        font-size: 1.3rem;
+        font-weight: 400;
+        color: $color-primary-dark-3;
+      }
+
+      @media only screen and (max-width: $bp-largest) {
+        margin-top: 2rem;
+        flex-direction: column;
+      }
+
+      @media only screen and (max-width: $bp-small) {
+        margin-top: 2rem;
+        flex-direction: row;
+      }
+    }
+  }
+}

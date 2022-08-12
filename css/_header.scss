@@ -1,0 +1,10 @@
+.header-content {
+  height: 80vh;
+  display: grid;
+  //   grid-template-rows: 1fr min-content;
+  grid-template-rows: 1fr max-content repeat(2, min-content);
+  grid-template-columns: minmax(20rem, 1fr);
+  row-gap: 5rem;
+  justify-content: center;
+  align-items: center;
+}

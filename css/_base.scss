@@ -1,0 +1,47 @@
+$color-primary-light-1: #fff;
+$color-primary-light-2: #ffa800;
+$color-primary-light-3: #7b61ff;
+$color-primary-dark-1: #161414;
+$color-primary-dark-2: #5b5b5b;
+$color-primary-dark-3: #878787;
+$color-primary-dark-4: #979797;
+
+// responsive breakpoints
+
+$bp-largest: 75em; // 1200 / 16
+$bp-large: 62.5em; // 1000px
+$bp-medium: 50em; // 800px
+$bp-small: 37.5em; // 600px
+$bp-smallest: 28.125em; // 450px
+$bp-extra-small: 21.875em; // 350px
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.heading-main {
+  grid-column: 1 / -1;
+  grid-row: 1/ 2;
+
+  display: flex;
+  justify-content: space-between;
+
+  @media only screen and (max-width: $bp-small) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
