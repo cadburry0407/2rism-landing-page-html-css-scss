@@ -479,11 +479,12 @@ body {
   right: 0rem;
   z-index: 9999;
   background-color: #1d1d1d;
-  opacity: 0;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-transition: opacity 0.25s ease-in;
-  transition: opacity 0.25s ease-in;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 0.25s cubic-bezier(0.55, 0.09, 0.68, 0.53);
+  transition: -webkit-transform 0.25s cubic-bezier(0.55, 0.09, 0.68, 0.53);
+  transition: transform 0.25s cubic-bezier(0.55, 0.09, 0.68, 0.53);
+  transition: transform 0.25s cubic-bezier(0.55, 0.09, 0.68, 0.53), -webkit-transform 0.25s cubic-bezier(0.55, 0.09, 0.68, 0.53);
 }
 
 .nav .menu__list {
@@ -497,18 +498,46 @@ body {
   text-decoration: none;
   color: azure;
   display: block;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  display: inline-block;
+  position: relative;
+}
+
+.nav .menu__list-item a:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffa800;
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+}
+
+.nav .menu__list-item a:hover:after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
 }
 
 .nav .menu__list-item a:hover {
   color: #ffa800;
-  -webkit-transition: 0.2s all;
-  transition: 0.2s all;
+  -webkit-transform: scale(110%);
+          transform: scale(110%);
 }
 
 .nav .menu.activated {
-  opacity: 1;
-  -webkit-transform: scale(1);
-          transform: scale(1);
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 .nav .nav__btn-toggle-menu {
